@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Aprenda Música | O seu novo curso</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'bege-fundo': '#FCF8F2',
+                            'texto-escuro': '#3A2E2B',
+                            'terracota': '#C85A3A',
+                            'terracota-escuro': '#a84a2f',
+                            'whatsapp': '#25D366',
+                            'whatsapp-escuro': '#128C7E',
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="bg-bege-fundo text-texto-escuro font-sans antialiased">
+        
+        <header class="flex flex-col md:flex-row justify-between items-center py-5 px-6 md:px-12 bg-texto-escuro text-bege-fundo">
+            
+            <h1 class="flex items-center gap-1 text-2xl font-bold">
+                <img src="assets/images/titulo.png" alt="Ícone do curso" class="w-16 hover:scale-[1.02] transition-transform duration-500">
+                Escola de Música</h1>
+        
+            <nav class="mt-4 md:mt-0">
+                <a href="#hero" class="mx-3 font-semibold hover:text-terracota transition-colors">Início</a>
+                <a href="#produto-container" class="mx-3 font-semibold hover:text-terracota transition-colors">Cursos</a>
+                <a href="#contatos" class="mx-3 font-semibold hover:text-terracota transition-colors">Contatos</a>
+            </nav>
+        
+        </header>
+
+        <main>
+        
+            <section id="hero" class="bg-terracota text-white text-center py-5 px-5 overflow-hidden">
+                <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-3/4 text-center md:text-left">
+                        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Desperte o músico que há em si!</h2>
+                        <p class="text-lg md:text-xl mb-0 max-w-2xl mx-auto md:mx-0 opacity-90">Aprenda a tocar o seu instrumento favorito com o com o nosso método passo-a-passo.</p>
+                    </div>
+                    <div class="md:w-1/4">
+                        <img src="assets/images/hero.png" alt="Imagem gerada por IA. Pessoa a tocar violoncelo." class="w-full rounded-2xl shadow-2xl hover:scale-[1.02] transition-transform duration-500">
+                    </div>
+                </div>
+                
+                
+            </section>
+            
+            <section id="produto-container" class="py-16 px-5 bg-bege-fundo text-center">
+                <h3 class="text-3xl text-texto-escuro font-bold mb-10">Detalhes do Curso</h3>
+
+                <div id="vitrine-cursos" class="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 max-w-5xl mx-auto items-start"></div>
+
+            </section>
+            
+            <section id="beneficios" class="py-16 px-5 bg-white text-center">
+                <h3 class="text-3xl text-texto-escuro font-bold mb-10">Por quê escolher-nos?</h3>
+                <div class="flex flex-col md:flex-row justify-center gap-10 max-w-5xl mx-auto">
+                    <div class="flex-1 min-w-[250px] p-5">
+                        <img src="assets/images/modalidades.png" alt="Ícone de material didático" class="mx-auto mb-4 w-16 rounded-2xl shadow-xl hover:scale-[1.02] transition-transform duration-500">
+                        <h4 class="text-terracota font-bold text-xl mb-2">Aulas Onlines ou Presenciais</h4>
+                        <p class="text-gray-600">Aulas ao seu ritmo, onde e quando quiser.</p>
+                    </div>
+                    <div class="flex-1 min-w-[250px] p-5">
+                        <img src="assets/images/suporte.png" alt="Ícone de material didático" class="mx-auto mb-4 w-16 rounded-2xl shadow-xl hover:scale-[1.02] transition-transform duration-500">
+                        <h4 class="text-terracota font-bold text-xl mb-2">Suporte Direto</h4>
+                        <p class="text-gray-600">Tire as suas dúvidas diretamente com um professor.</p>
+                    </div>
+                    <div class="flex-1 min-w-[250px] p-5">
+                        <img src="assets/images/material.png" alt="Ícone de material didático" class="mx-auto mb-4 w-16 rounded-2xl shadow-xl hover:scale-[1.02] transition-transform duration-500">
+                        <h4 class="text-terracota font-bold text-xl mb-2">Material Ditático</h4>
+                        <p class="text-gray-600">Pague uma vez, obtenha acesso a materiais didáticos exclusivos. Sem mensalidades ocultas.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contato-whatsapp" class="bg-bege-fundo py-20 px-5 text-center">
+                <div class="max-w-3xl mx-auto bg-white p-10 md:p-14 rounded-3xl shadow-[0_15px_40px_rgba(200,90,58,0.15)] border-2 border-terracota/10">
+                    <h3 class="text-texto-escuro text-3xl font-bold mb-5">Tem alguma dúvida sobre o curso?</h3>
+                    <p class="text-gray-600 text-lg md:text-xl mb-10">Fale diretamente com nossa equipe pelo WhatsApp, para começar a sua jornada musical conosco hoje mesmo.</p>
+                    <a href="https://wa.me/5521xxxxxxxxxx" target="_blank" class="inline-block bg-whatsapp hover:bg-whatsapp-escuro text-white py-4 px-8 text-xl font-bold rounded-full transition-all transform hover:scale-105 shadow-[0_8px_20px_rgba(37,211,102,0.4)]">
+                    💬 Falar no WhatsApp
+                    </a>
+                </div>
+            </section>
+        </main>
+       
+        <footer id="contatos" class="bg-texto-escuro text-gray-400 text-center py-6 text-sm">
+            <p>&copy; 2026 Escola de Música. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
