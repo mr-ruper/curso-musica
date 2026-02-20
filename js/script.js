@@ -21,7 +21,7 @@ const vitrine = document.getElementById('vitrine-cursos');
 catalogo.forEach(curso => {
     vitrine.innerHTML += `
         <div class="cartao-curso relative bg-white rounded-2xl text-left border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer overflow-hidden">
-            <img src="${curso.imagem}" alt="Capa do curso de ${curso.titulo}" class="w-full h-48 object-cover">
+            <img src="${curso.imagem}" alt="Capa do curso de ${curso.titulo}" width="344" height="192" loading="lazy" class="w-full h-48 object-cover">
             <div class="p-8 relative">
                 <button class="icone-toggle absolute top-0 right-6 text-4xl font-bold text-terracota bg-transparent border-none outline-none pointer-events-none">+</button>
                 <h4 class="text-terracota text-2xl font-bold mb-2 pr-8">${curso.titulo}</h4>
